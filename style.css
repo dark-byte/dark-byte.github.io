@@ -1,0 +1,275 @@
+body{
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+  text-decoration: none;
+}
+
+i{
+  font-weight: bold;
+}
+
+.navbar-nav{
+  display: flex;
+  padding-left: 5%;
+}
+
+.navbar-brand{
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+.socials-nav{
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  padding-right: 2%;
+}
+
+#video-background{
+  position: fixed;
+  z-index: -1;
+  top: 0; 
+}
+
+
+.adrish-div{
+  color: aliceblue;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+#title{
+  font-size: 5em;
+}
+
+.adrish-div a{
+  font-size: 1em;
+}
+
+
+#portrait-img {
+  width: 25em;
+  height: 30em;
+  object-fit: cover;
+  box-shadow: 2px 30px 25px rgba(6, 33, 43, 0.26);
+}
+.landing-img{
+  text-align: center;
+}
+
+.landing-name {
+  color: black;
+  text-align: center;
+}
+
+.landing-name div{
+  text-align: start;
+  padding-left: 20px;
+}
+
+.intro-div{
+  padding: 5% 0px 5% 0px;
+  background: rgb(232, 245, 255);
+  background-image: url(Assets/bg-shapes.png);
+  background-size: cover;
+  background-position: start;
+}
+
+.portfolio-banner{
+  height: 25%;
+  background-image: url("Assets/alex-shutin-kKvQJ6rK6S4-unsplash.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: aliceblue;
+}
+
+.fiverr{
+  display: flex;
+  height: 100px;
+}
+
+.fiverr h2 a{
+  font-weight: bold;
+  color: black;
+}
+
+.portfolio{
+  min-height: 100vh;
+  width: 100vw;
+  background: white;
+}
+
+.videos{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5%;
+  align-items: center;
+  color: white;
+}
+
+.video{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  background-size: cover;
+  background-position: center;
+  min-width: 450px;
+  min-height: 300px;
+  flex: auto;
+  box-shadow: 2px 20px 40px rgba(0, 0, 0, 0.267);
+  border-radius: .5em;
+}
+
+.video:hover{
+  opacity: .8;
+}
+
+.video i {
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+
+.about-banner{
+  height: 25%;
+  background-image: url("Assets/sime-basioli-BRkikoNP0KQ-unsplash.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: aliceblue;
+}
+
+.about-text{
+  display: flex;
+  flex-wrap: wrap;
+  justify-self: end;
+  max-width: 600px;
+  min-width: 300px;
+  width: 100%;
+}
+
+.portrait-img{
+  min-width: 300px;
+  max-height: 30em;
+  box-shadow: 2px 30px 25px rgba(6, 33, 43, 0.26)
+}
+
+.about{
+  background-image: url(Assets/image-from-rawpixel-id-2701600-jpeg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contact-page{
+  color:white;
+  background-image: url(Assets/image-from-rawpixel-id-2337997-jpeg.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-page h2{
+  font-weight: bold;
+}
+
+.contact-page a{
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  font-weight: lighter;
+}
+
+.contact-banner{
+  height: 25%;
+  background-image: url("Assets/isaac-quesada-YrVLTXO847U-unsplash.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: aliceblue;
+}
+
+
+
+@media (min-aspect-ratio: 16/9) {
+  #video-background {
+      width:100%;
+      height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  #video-background { 
+      width:auto;
+      height: 100%;
+  }
+}
+@media (max-width: 767px) {
+  #video-background {
+      display: none;
+  }
+
+  .adrish-div {
+      background: url('Assets/bg.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+  }
+}
+
+@media all and (max-width: 800px) {
+
+  #title{
+    font-size: 2em;
+  }
+  .adrish-div a{
+    font-size: 1em;
+  }
+
+  .navbar-brand{
+    font-size: 1.5em;
+  }
+
+  #portrait-img{
+    width: 60vw;
+    height: auto;
+    margin: 40px 10px 60px 10px;
+  }
+
+  .video{
+    min-width: 75vw;
+    min-height: 200px;
+  }
+
+  .about-text{
+    padding: 50px 15px;
+
+  }
+
+  .about-text h2{
+    margin-bottom: 15px;
+    font-size: 2em;
+  }
+
+  #about{
+    padding-bottom: 60px;
+  }
+}
+
+/* 
+@media all and (max-width: 800px){
+  #title{
+    font-size: 2.5em;
+  }
+} */
